@@ -9,6 +9,4 @@ Not present
 
 
 ## W2
-Write your W2 Devlog here.
-
-Continue adding additional headers below this one for future weeks and future activities.
+No Devlog for this week
