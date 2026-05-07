@@ -64,3 +64,22 @@ Notes:
 
 ### Activity 2
 Since I somehow overlooked that the milestone 1 required us to make a functional state machine, I decided to finish the state machine during this class. During this class, I managed to get the horses to go the correct way after pressing one of the buttons, have a new horse enter after the previous one left, and semi animate the horses walking in.
+
+## W6
+### Activity 1
+What's new? - Added 5 new horses and replaced the two placeholder horses, Added the other borders that were missing, and partially built a correct denial reason mechanic.
+
+[2nd Playtest Itch Page](https://kalebjreyes.itch.io/honse-vertical-slice-2nd-playtest)
+
+Goals: See if the borders ruin gameplay too much, see if the denial reasoning is buggy so far
+
+Notes:
+- When the horse gets to the center, lerp the rotation so they don't just snap in place
+- Add a reference sheet because the average person doesn't know the horse patterns
+
+
+### Activity 2
+1. Since the RGB channels are stored from 0 - 1, all of the values that are being multiplied will likely be decimals under 1. When you multiply values less than 1, the product will always result in a lower value. A lower value on the RGB channels result in a darker and less saturated color.
+2. If we multiply to combine alpha values, we can expect the result to be more translucent than either originals for the same reason as in question 1. When we multiply the alpha values, which are stored from 0 - 1, we will always get back a lower number which results in the result being more translucent.
+3. The shader is getting the UV values from the mesh it's connected to.
+4. It doesn't really sound that exciting to me. I left math last year after my AP Calculus exam and I am not looking forward to ever going back to it.
