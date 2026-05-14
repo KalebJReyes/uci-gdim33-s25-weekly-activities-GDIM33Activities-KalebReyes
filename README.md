@@ -83,3 +83,12 @@ Notes:
 2. If we multiply to combine alpha values, we can expect the result to be more translucent than either originals for the same reason as in question 1. When we multiply the alpha values, which are stored from 0 - 1, we will always get back a lower number which results in the result being more translucent.
 3. The shader is getting the UV values from the mesh it's connected to.
 4. It doesn't really sound that exciting to me. I left math last year after my AP Calculus exam and I am not looking forward to ever going back to it.
+
+## W7
+1. The data came from the shiba's mesh
+2. When the color data of the vertices that make up a polygon are different, the colors of the fragments in the polygon are interpolated, or blended, between the colors of the vertices.
+3. The shiba is less detailed because the colors are coming from the vertex and the fragments in the polygons get interpolated which causes the colors to blend and have less detail than the texture from last weeks activity.
+4. There seems to be a patch on the shiba's left hind leg where the color is green when its surrounding is blue. This indicates that the area's vertex normal isn't what it should be.
+5. I can imagine being able to test the UV using a shader similar to this. This could be useful to spot any mistakes that may have happened while the artist was making the model or when the model was being transferred to Unity.
+6. The light direction vector is pointing towards the shiba but the shiba's normal vectors are pointing away from itself. Two vectors pointing opposite of eachother results in a negative dot product which causes the areas that are being hit by light to be dark.
+7. We set the Blend Mode to additive because we want the fire to look brighter when blending. If we were to use multiply, the fire would look darker because the color values are getting smaller. When we use additive, the color values will always be higher.
