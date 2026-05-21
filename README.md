@@ -92,3 +92,25 @@ Notes:
 5. I can imagine being able to test the UV using a shader similar to this. This could be useful to spot any mistakes that may have happened while the artist was making the model or when the model was being transferred to Unity.
 6. The light direction vector is pointing towards the shiba but the shiba's normal vectors are pointing away from itself. Two vectors pointing opposite of eachother results in a negative dot product which causes the areas that are being hit by light to be dark.
 7. We set the Blend Mode to additive because we want the fire to look brighter when blending. If we were to use multiply, the fire would look darker because the color values are getting smaller. When we use additive, the color values will always be higher.
+
+## W8
+### Activity 1
+- In this build, I added a new scriptable object that holds the dialogue that will show up in the horse translator and I added a reference sheet that will help the player deduce if a horse is fake easier
+
+[3rd Playtest Itch Page](https://kalebjreyes.itch.io/honse-vertical-slice-3rd-playtest)
+
+Goals:
+- See if the reference sheet is too obstructive
+- Get feedback on whether or not the reference sheet is clear
+- Look and see if there are any apparent bugs that I missed
+
+Notes:
+- Toggle reference button may not be too clear
+- Playtester didn’t have too much issues deducing which horses were fake
+- Didn’t see any bugs so far
+
+### Activity 2c
+1. The FullScreenPassRendererFeature is the pass associated with our post processing effect. Besides the name, I can tell because when I select it, the post processing effect we built shows up. If we go frame by frame on the Frame debugger, we can see that the 2nd drawcall in the pass is the one that draws our post processing effect.
+2. When we set the lerp value to 0.5, the effect seems to be at half opacity. At 0, the effect is completely invisible and at 1, the effect is out completely.
+3. The screen looks different with these values because Lerp interpolates between the two inputs we gave it and returns a value that is a certain percentage between the inputs. Since the lerp value goes from 0 to 1, at a lerp value of 0.5, the effect is 50% our first input and 50% our second input.
+4. If we were to just use sin(time), our lerp value would oscillate between -1 and 1. When we have our lerp value go into the negatives, we get an unwanted result, or the effect gets unnecessarily bright. The algorithm (sin(time) - 1) / 2 oscillates between 0 and 1 which makes the effect go from 0% opaque to 100% opaque and then back to 0% opaque. This algorithm prevents the effect from getting bright as the lerp value never goes into the negatives.
