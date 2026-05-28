@@ -114,3 +114,24 @@ Notes:
 2. When we set the lerp value to 0.5, the effect seems to be at half opacity. At 0, the effect is completely invisible and at 1, the effect is out completely.
 3. The screen looks different with these values because Lerp interpolates between the two inputs we gave it and returns a value that is a certain percentage between the inputs. Since the lerp value goes from 0 to 1, at a lerp value of 0.5, the effect is 50% our first input and 50% our second input.
 4. If we were to just use sin(time), our lerp value would oscillate between -1 and 1. When we have our lerp value go into the negatives, we get an unwanted result, or the effect gets unnecessarily bright. The algorithm (sin(time) - 1) / 2 oscillates between 0 and 1 which makes the effect go from 0% opaque to 100% opaque and then back to 0% opaque. This algorithm prevents the effect from getting bright as the lerp value never goes into the negatives.
+
+## W9
+### Activity 1
+Game: Red Dead Redemption 2
+
+Post Processing Effect
+- When the player activates dead-eye, the game adds a vignette, increases the saturation, and increases the bloom.
+- Activated when the player presses the button to activate dead eye when it's available.
+- Deactivated when the player is done with their dead eye and kills the people they marked.
+- This effect is applied to the entire screen and not to one game object.
+
+Red X over marked enemies
+- During dead eye, when the player aims at someone, a red x is marked over them.
+- Activated when the player aims at someone while dead eye is active
+- Deactivated when the player finishes dead eye and kills the marked person
+- This effect is applied to the NPC gameobjects that the player marks
+
+### Activity 2
+Link to commit just in case: [commit](https://github.com/KalebJReyes/VerticalSlice-KalebReyes/commit/ac99103bf191b5043303f44e63530b17cc89ca2c)
+<img width="1609" height="1023" alt="Screenshot 2026-05-27 184236" src="https://github.com/user-attachments/assets/363a9ce3-657d-43ee-9301-9a57cc2817a2" />
+This shader graph flashes the screen green and is used when a horse is accepted. Today, I made the shader graph and tweaked it to flash the way I want it to. I added the functionality of the effect getting activated when the player presses the accept button and deactivating when the next horse is chosen.
