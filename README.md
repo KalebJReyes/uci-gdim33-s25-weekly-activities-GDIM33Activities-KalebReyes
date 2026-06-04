@@ -135,3 +135,27 @@ Red X over marked enemies
 Link to commit just in case: [commit](https://github.com/KalebJReyes/VerticalSlice-KalebReyes/commit/ac99103bf191b5043303f44e63530b17cc89ca2c)
 <img width="1609" height="1023" alt="Screenshot 2026-05-27 184236" src="https://github.com/user-attachments/assets/363a9ce3-657d-43ee-9301-9a57cc2817a2" />
 This shader graph flashes the screen green and is used when a horse is accepted. Today, I made the shader graph and tweaked it to flash the way I want it to. I added the functionality of the effect getting activated when the player presses the accept button and deactivating when the next horse is chosen.
+
+## W10
+### Activity 1
+- In this build, I added a new state for when the horse is in dialogue and changed what toggles my post processing effects on and off.
+
+[4th Playtest Itch Link](https://kalebjreyes.itch.io/honse-vertical-slice-4th-playtest)
+
+Goals:
+- Find if there are any bugs with my new state
+- See if players are able to easily discern fake horses
+- Get feedback on anything else I may need to add to help players
+
+Notes: 
+- Playtester had issues closing the reference sheet
+- Some errors in the Food cards and IDs
+- Errors misled playtester
+
+### Activity 2
+When starting to plan a large scope game, I could make an object diagram to see how different objects should interact with each other and give me a better understanding on how I could build the game's systems. While I'm working on the project, I can breakdown my current task to make the task feel more digestable. Using these for planning can help me get a good understanding of the actual scope of the game as ideas in your mind can feel simple but are actually really complex. Doing these practices helps you visually see how complex a system is and helps you accurately gauge the scope.
+
+### Activity 3
+[commit](https://github.com/KalebJReyes/VerticalSlice-KalebReyes/commit/81d1025d0cb05b6a9ff5015b92949be948dccae9)
+
+In this commit, I addressed the feedback I got from playtesting today. Some of the IDs and Food cards had errors on them and closing the reference sheet wasn't intuitive enough. I fixed the errors and added an X on the reference sheet that closes it.
